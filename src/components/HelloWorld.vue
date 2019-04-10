@@ -8,7 +8,7 @@
     <div v-if="!quizStarted">
       <v-flex lg12 xs12 >
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/goodboy.gif')"
           class="my-3"
           contain
           height="200"
@@ -16,17 +16,17 @@
       </v-flex>
 
       <v-flex lg12 mb-4 xs12>
-     
+
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-         
+          Who's the best boy?
+          <br>Let's find out.
+
         </p>
       </v-flex>
-       <v-btn @click="quizStarted = true"> 
+       <v-btn @click="quizStarted = true">
               Start the quiz
-      
-      
+
+
         </v-btn>
     </div>
     <div v-if="quizStarted">
@@ -34,7 +34,7 @@
         <img src="../assets/Sam2.png"></img>
       </v-flex>
     </div>
-       
+
     </v-layout>
   </v-container>
 </template>
@@ -42,7 +42,7 @@
 <script>
   export default {
     data: () => ({
-      quizStarted:false, 
+      quizStarted:false,
       numberOfQuestions:10
     })
   }
